@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Getsamani - Sobre Nós</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body> <script src="script.js"></script>
+  <!-- Navegação -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Getsamani</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Categorias</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="feminino.html">Camisas Femininas</a></li>
+            <li><a class="dropdown-item" href="masculino.html">Camisas Masculinas</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="sobre.html">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contaato.html">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Título e Descrição -->
+  <div class="container mt-4">
+    <h1 class="text-center">Sobre a Getsamani</h1>
+    <p class="text-center">A Getsamani é uma loja católica dedicada a fornecer camisas oversized com estilo e mensagem. Nossa missão é unir conforto e espiritualidade em roupas modernas e acessíveis para todos.</p>
+  </div>
+
+  <!-- Cards dos Valores da Empresa -->
+  <div class="container mt-5">
+    <h2 class="text-center">Nossos Valores</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <i class="bi bi-heart-fill" style="font-size: 2rem; color: red;"></i>
+            <h5 class="card-title">Paixão</h5>
+            <p class="card-text">Amamos o que fazemos e colocamos o coração em cada peça que produzimos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <i class="bi bi-globe" style="font-size: 2rem; color: green;"></i>
+            <h5 class="card-title">Sustentabilidade</h5>
+            <p class="card-text">Nosso compromisso é produzir de forma sustentável, respeitando o meio ambiente.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center">
+            <i class="bi bi-people-fill" style="font-size: 2rem; color: blue;"></i>
+            <h5 class="card-title">Comunidade</h5>
+            <p class="card-text">Apoiamos nossa comunidade local e trabalhamos para fortalecer nossos laços com os clientes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accordion sobre a História da Loja -->
+  <div class="container mt-5">
+    <h2 class="text-center">Nossa História</h2>
+    <div class="accordion" id="historyAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Como tudo começou
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#historyAccordion">
+          <div class="accordion-body">
+            A Getsamani foi fundada em 2020, com o objetivo de criar um elo entre moda e fé. Desde o início, procuramos inovar, criando camisas que transmitam mensagens de amor, fé e esperança.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Nossa expansão
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#historyAccordion">
+          <div class="accordion-body">
+            Em apenas dois anos, expandimos nossa linha de produtos para incluir roupas masculinas, femininas e infantis, sempre mantendo o compromisso com a qualidade e o estilo oversized.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Onde estamos hoje
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#historyAccordion">
+          <div class="accordion-body">
+            Hoje, a Getsamani é reconhecida como uma das principais lojas católicas de moda oversized no Brasil, com clientes em todo o país. Nossa loja online cresce continuamente e continuamos a inovar com novas coleções.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- Scripts Bootstrap e JS -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="script.js"></script>
+</body>
+</html>
+ </html>

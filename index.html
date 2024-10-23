@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Getsamani - Loja Católica de Camisas Oversized</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navegação -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Getsamani</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Categorias</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="masculino.html">Camisas Masculinas</a></li>
+            <li><a class="dropdown-item" href="feminino.html">Camisas Femininas</a></li>
+          
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobre.html">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contaato.html">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Carrossel -->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="jul-02-4af143f2cebdcc8c3917048947776047-640-0.webp" class="d-block w-100" alt="Camisa 1" width="25%" height="25%"> 
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Camisa Oversized</h5>
+          <p>Estilo moderno com uma mensagem católica.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="verao-02-9f666c136a6958704d17032097253557-640-0.webp" class="d-block w-100" alt="Camisa 2" width="10%" height="25%">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Estilo Único</h5>
+          <p>Conforto e elegância para o dia a dia.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="whatsapp-image-2024-01-23-at-10-06-41-227cfc836559c081d217060152218184-640-0.webp" class="d-block w-100" alt="Camisa 3" width="25%" height="25%">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Desconto Especial</h5>
+          <p>Compre agora e aproveite nossas ofertas.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+
+  <!-- Seção de Produtos -->
+  <div class="container mt-5">
+    <h2 class="text-center">Nossos Produtos</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="jul-02-4af143f2cebdcc8c3917048947776047-640-0.webp" class="img-fluid" alt="Camisa 1">
+        <h3>Camisa Oversized Masculina</h3>
+        <p>R$ 59,90</p>
+        <button class="btn btn-primary" onclick="addToCart('Camisa Oversized Masculina')">Adicionar ao Carrinho</button>
+      </div>
+      <div class="col-md-4">
+        <img src="verao-02-9f666c136a6958704d17032097253557-640-0.webp" class="img-fluid" alt="Camisa 2">
+        <h3>Camisa Feminina Clássica</h3>
+        <p>R$ 49,90</p>
+        <button class="btn btn-primary" onclick="addToCart('Camisa Feminina Clássica')">Adicionar ao Carrinho</button>
+      </div>
+      <div class="col-md-4">
+        <img src="whatsapp-image-2024-01-23-at-10-06-41-227cfc836559c081d217060152218184-640-0.webp" class="img-fluid" alt="Camisa 3">
+        <h3>Camisa Infantil Estilosa</h3>
+        <p>R$ 39,90</p>
+        <button class="btn btn-primary" onclick="addToCart('Camisa Infantil Estilosa')">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="bg-light text-center text-lg-start mt-5">
+    <div class="text-center p-3">
+      © 2024 Getsamani - Loja Católica de Camisas Oversized. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
